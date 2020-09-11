@@ -35,4 +35,4 @@ let NewTileModal = (props) => {
 
 }
 
-export default NewTileModal;
+export default NewTileModal; 
