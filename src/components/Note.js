@@ -2,9 +2,10 @@ import React from 'react'
 import {Container, Card, Breadcrumb, Button, Image, Modal, Form, Col} from 'react-bootstrap'
 import landscape from '../assets/landscape.jpg'
 
-let Tile = (props) => {
+let Note = (props) => {
    return(
      <Card style={{ width: '18rem', padding:"2px", margin:"0.25rem", float:"left" }}>
+     title
       <Breadcrumb style={{padding:"2px" }}>
         <Breadcrumb.Item>Title</Breadcrumb.Item>
         <Breadcrumb.Item>detail</Breadcrumb.Item>
@@ -28,4 +29,4 @@ let Tile = (props) => {
     </Card>
   )
 }
-export default Tile;
+export default Note;

@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
 import {Container, Button} from 'react-bootstrap'
 
-import NewTileModal from './NewTileModal.js'
-import Tile from './tile.js'
+import NewNoteModal from './NewNoteModal.js'
+import Note from './Note.js'
 
 import landscape from '../assets/landscape.jpg'
 
@@ -32,10 +32,10 @@ modalChange(){
           border:"10px solid white",
           padding:"2px",
           width:"1000px",
-          height:"400px"
+          height:"200px"
         }}>
         <Button onClick={this.modalChange}>toggle</Button>
-        <NewTileModal props />
+        <NewNoteModal props />
         </Container>
         <Container style={{
           backgroundImage:`url(${landscape})`,
@@ -43,9 +43,14 @@ modalChange(){
           border:"10px solid white",
           padding:"2px",
           width:"1000px",
-          height:"500px"
+          height:"800px"
         }}>
-        <Tile/>
+        <Note/>
+        <Note/>
+        <Note/>
+        <Note/>
+        <Note/>
+        <Note/>
         </Container>
       </div>
     )

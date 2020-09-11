@@ -28,11 +28,11 @@ import {Container, Card, Breadcrumb, Button, Image, Modal, Form, Col} from 'reac
 
 // style={{display:`${this.state.divState}`}}
 
-let NewTileModal = (props) => {
+let NewNoteModal = (props) => {
     return (
       <div style={{display:`${props.divState}`}}>hello</div>
     )
 
 }
 
-export default NewTileModal; 
+export default NewNoteModal; 
