@@ -4,7 +4,7 @@ import landscape from '../assets/landscape.jpg'
 
 let Note = (props) => {
    return(
-     <Card style={{ width: '18rem', padding:"2px", margin:"0.25rem", float:"left", backgroundColor:"rgba(255,255,255,0)", border:"none"}}>
+     <Card style={{padding:"2px", margin:"0.25rem", float:"left", backgroundColor:"rgba(255,255,255,0)", border:"none"}}>
      <div style={{ color:"black", backgroundColor:"rgba(255,255,255,0.38)" }}>Honey Do List</div>
       <Breadcrumb style={{padding:"2px" }}>
         <Breadcrumb.Item>Take the garbage out</Breadcrumb.Item>

@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Container, Button} from 'react-bootstrap'
+import {Container, Button, Navbar, Nav, NavDropdown, Form, FormControl, } from 'react-bootstrap'
 import {connect} from 'react-redux'
 
 import {setVisibilityFilter} from '../actions'
@@ -32,6 +32,27 @@ modalChange(){
   render(){
     return(
       <div>
+        <Navbar bg="light" expand="lg">
+          <Navbar.Brand>MyNotes</Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav>
+              <Nav.Link>Home</Nav.Link>
+              <Nav.Link>Link</Nav.Link>
+              <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                <NavDropdown.Item>Action</NavDropdown.Item>
+                <NavDropdown.Item>Another</NavDropdown.Item>
+                <NavDropdown.Item>Something</NavDropdown.Item>
+                <NavDropdown.Item>Seperated</NavDropdown.Item>
+              </NavDropdown>
+            </Nav>
+            <Form>
+              <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+              <Button variant="outline-success">Search</Button>
+            </Form>
+          </Navbar.Collapse>
+        </Navbar>
+
         <Container style={{
           borderRadius:"0.25rem",
           border:"10px solid white",
@@ -39,9 +60,10 @@ modalChange(){
           width:"1000px",
           height:"200px"
         }}>
-        <Button onClick={this.modalChange}>toggle</Button>
-        <NewNoteModal props />
+          <Button onClick={this.modalChange}>toggle</Button>
+          <NewNoteModal props />
         </Container>
+
         <Container style={{
           backgroundImage:`url(${landscape})`,
           borderRadius:"0.25rem",
@@ -49,12 +71,12 @@ modalChange(){
           width:"1000px",
           height:"800px"
         }}>
-        <Note/>
-        <Note/>
-        <Note/>
-        <Note/>
-        <Note/>
-        <Note/>
+          <Note/>
+          <Note/>
+          <Note/>
+          <Note/>
+          <Note/>
+          <Note/>
         </Container>
       </div>
     )
