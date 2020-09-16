@@ -1,5 +1,8 @@
 import React, {Component} from 'react'
 import {Container, Button} from 'react-bootstrap'
+import {connect} from 'react-redux'
+
+import {setVisibilityFilter} from '../actions'
 
 import NewNoteModal from './NewNoteModal.js'
 import Note from './Note.js'
@@ -16,12 +19,14 @@ class Organizer extends Component {
     this.modalChange = this.modalChange.bind(this)
   }
 
+
 modalChange(){
   if(this.state.divState=="none"){
     this.setState({divState:"block"})
   }else{
     this.setState({divState:"none"})
   }
+  this.props.onClickTriggerAction(this.state.divState)
 }
 
   render(){
@@ -40,8 +45,7 @@ modalChange(){
         <Container style={{
           backgroundImage:`url(${landscape})`,
           borderRadius:"0.25rem",
-          border:"10px solid white",
-          padding:"2px",
+          padding:"3px",
           width:"1000px",
           height:"800px"
         }}>
@@ -55,9 +59,18 @@ modalChange(){
       </div>
     )
   }
-
 }
 
 
 
-export default Organizer;
+//STATE
+const mapStateToProps = (state, ownProps) => ({
+})
+
+//DISPATCH
+const mapDispatchToProps = (dispatch, ownProps) => ({
+  onClickTriggerAction: (x) => dispatch(setVisibilityFilter(x))
+})
+
+//CONNECT TO STORE
+export default connect(mapStateToProps, mapDispatchToProps)(Organizer)
