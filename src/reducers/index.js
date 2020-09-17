@@ -1,8 +1,10 @@
 import {combineReducers} from 'redux'
-import {setVisibilityFilter, createList, createNote} from '../actions'
+// import {setVisibilityFilter, createList, createNote} from '../actions'
 
 const initialState = {
-    db:[],
+    db:[
+      {noteTitle:"Groceries"}
+    ],
     notes:[
       {
         title:"Food",

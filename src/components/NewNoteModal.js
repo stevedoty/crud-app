@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Container, Card, Breadcrumb, Button, Image, Modal, Form, Col} from 'react-bootstrap'
+// import {Container, Card, Breadcrumb, Button, Image, Modal, Form, Col} from 'react-bootstrap'
 
 
 // <Modal >
@@ -35,4 +35,4 @@ let NewNoteModal = (props) => {
 
 }
 
-export default NewNoteModal; 
+export default NewNoteModal;
