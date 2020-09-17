@@ -23,8 +23,16 @@ export const setVisibilityFilter = divState => ({
 //MOVE NOTE
 
 //CREATE LIST
+export const createList = notes => ({
+  type: 'CREATE_LIST',
+  notes
+})
 
 //CREATE NOTE
+export const createNote = notes => ({
+  type: 'CREATE_NOTE',
+  notes
+})
 
 
 //----SETTINGS ACTIONS
