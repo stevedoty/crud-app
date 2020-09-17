@@ -22,7 +22,7 @@ function Organizer({state}) {
         backgroundColor:"rgba(255,255,255,0.38)"
       }}>
       {db[0].noteTitle}
-      {notes.map((note, i)=>{
+      {db[0].notes.map((note, i)=>{
         return <Note key={i} {...note}/>
       })}
     </Card>
