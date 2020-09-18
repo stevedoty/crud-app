@@ -13,8 +13,8 @@ const initialState = {
             ],
             children:[
               {
-                childTitle:"child title",
-                childDetail:"child detail"
+                childTitle:"child title 0",
+                childDetail:"child detail 0"
               }
             ]
           },
@@ -25,8 +25,8 @@ const initialState = {
             ],
             children:[
               {
-                childTitle:"child title",
-                childDetail:"child detail"
+                childTitle:"child title 1",
+                childDetail:"child detail 1"
               }
             ],
           },

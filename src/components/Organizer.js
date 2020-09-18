@@ -24,6 +24,7 @@ function Organizer({state}) {
         }}>
         {db[0].noteTitle}
         {db[0].notes.map((note, {children}, i)=>{
+          console.log(i);
           return <Note key={i} {...note}/>
         })}
       </Card>

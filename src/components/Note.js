@@ -23,15 +23,14 @@ let Note = (note) => {
         <Breadcrumb.Item>{note.title}</Breadcrumb.Item>
         <Breadcrumb.Item>{note.details[0]}</Breadcrumb.Item>
       </Breadcrumb>
-      <Breadcrumb style={{padding:"2px" }}>
-        <Breadcrumb.Item>{note.children[0].childTitle}</Breadcrumb.Item>
-        <Breadcrumb.Item>{note.children[0].childDetail}</Breadcrumb.Item>
-      </Breadcrumb>
-
-        {note.children.map((child, i)=>{
-          return <>{"hi"}</>
-        })}
-
+      {note.children.map((child, j)=>{
+        return(
+          <Breadcrumb key={j} style={{padding:"2px", marginLeft:"6px" }}>
+            <Breadcrumb.Item>{child.childTitle}</Breadcrumb.Item>
+            <Breadcrumb.Item>{child.childDetail}</Breadcrumb.Item>
+          </Breadcrumb>
+        )
+      })}
     </Card>
   )
 }
