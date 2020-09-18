@@ -4,52 +4,115 @@ import {combineReducers} from 'redux'
 const initialState = {
     db:[
       {
-        noteTitle:"Groceries",
+        noteTitle:"NEEDS",
         notes:[
           {
             title:"Food",
-            detail:"some detail",
-            child:"child title"
+            details:[
+              "some detail"
+            ],
+            children:[
+              {
+                childTitle:"child title",
+                childDetail:"child detail"
+              }
+            ]
           },
           {
             title:"Water",
-            detail:"some detail",
-            child:"child title"
+            details:[
+              "some detail"
+            ],
+            children:[
+              {
+                childTitle:"child title",
+                childDetail:"child detail"
+              }
+            ],
           },
           {
             title:"Shelter",
-            detail:"some detail",
-            child:"child title"
+            details:[
+              "some detail"
+            ],
+            children:[
+              {
+                childTitle:"child title",
+                childDetail:"child detail"
+              }
+            ],
           },
           {
             title:"Creativity",
-            detail:"some detail",
-            child:"child title"
+            details:[
+              "some detail"
+            ],
+            children:[
+              {
+                childTitle:"child title",
+                childDetail:"child detail"
+              }
+            ],
           },
           {
             title:"Purpose",
-            detail:"some detail",
-            child:"child title"
+            details:[
+              "some detail"
+            ],
+            children:[
+              {
+                childTitle:"child title",
+                childDetail:"child detail"
+              }
+            ],
           },
           {
             title:"Education",
-            detail:"some detail",
-            child:"child title"
+            details:[
+              "some detail"
+            ],
+            children:[
+              {
+                childTitle:"child title",
+                childDetail:"child detail"
+              }
+            ],
           },
           {
             title:"Communication",
-            detail:"some detail",
-            child:"child title"
+            details:[
+              "some detail"
+            ],
+            children:[
+              {
+                childTitle:"child title",
+                childDetail:"child detail"
+              }
+            ],
           },
           {
             title:"Information",
-            detail:"some detail",
-            child:"child title"
+            details:[
+              "some detail"
+            ],
+            children:[
+              {
+                childTitle:"child title",
+                childDetail:"child detail"
+              }
+            ],
           },
           {
             title:"Travel",
-            detail:"some detail",
-            child:"child title"
+            details:[
+              "some detail"
+            ],
+            children:[
+              {
+                childTitle:"child title",
+                childDetail:"child detail"
+              }
+            ],
           },
         ],
       }

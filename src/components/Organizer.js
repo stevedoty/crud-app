@@ -16,16 +16,18 @@ function Organizer({state}) {
   // }
 
   return(
-    <Card
-      style={{
-        color:"white",
-        backgroundColor:"rgba(255,255,255,0.38)"
-      }}>
-      {db[0].noteTitle}
-      {db[0].notes.map((note, i)=>{
-        return <Note key={i} {...note}/>
-      })}
-    </Card>
+    <Container>
+      <Card
+        style={{
+          color:"white",
+          backgroundColor:"rgba(255,255,255,0.38)"
+        }}>
+        {db[0].noteTitle}
+        {db[0].notes.map((note, {children}, i)=>{
+          return <Note key={i} {...note}/>
+        })}
+      </Card>
+    </Container>
   )
 
 }

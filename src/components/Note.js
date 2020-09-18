@@ -11,7 +11,6 @@ import {
 import landscape from '../assets/landscape.jpg'
 
 let Note = (note) => {
-  console.log(note);
    return(
      <Card
       style={{
@@ -22,14 +21,17 @@ let Note = (note) => {
         border:"none"}}>
       <Breadcrumb style={{padding:"2px" }}>
         <Breadcrumb.Item>{note.title}</Breadcrumb.Item>
-        <Breadcrumb.Item>{note.detail}</Breadcrumb.Item>
-        <Breadcrumb.Item>
-          <Image
-            src={landscape}
-            style={{width:"20px", height:"20px"}}
-          />
-        </Breadcrumb.Item>
+        <Breadcrumb.Item>{note.details[0]}</Breadcrumb.Item>
       </Breadcrumb>
+      <Breadcrumb style={{padding:"2px" }}>
+        <Breadcrumb.Item>{note.children[0].childTitle}</Breadcrumb.Item>
+        <Breadcrumb.Item>{note.children[0].childDetail}</Breadcrumb.Item>
+      </Breadcrumb>
+
+        {note.children.map((child, i)=>{
+          return <>{"hi"}</>
+        })}
+
     </Card>
   )
 }
