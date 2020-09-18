@@ -6,17 +6,14 @@ import {setVisibilityFilter} from '../actions'
 
 // import NewNoteModal from './NewNoteModal.js'
 import Note from './Note.js'
-
+import NavBar from './NavBar.js'
 
 function Organizer({state}) {
   const {notes, db} = state.crudDB
 
-  // const modalChange = () => {
-  //   console.log('hello', createList)
-  // }
-
   return(
     <Container>
+      <NavBar/>
       <Card
         style={{
           color:"white",
