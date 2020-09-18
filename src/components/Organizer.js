@@ -1,5 +1,13 @@
 import React from 'react'
-import {Container,Card, Button, Navbar, Nav, NavDropdown, Form, FormControl, } from 'react-bootstrap'
+import {
+  Container,
+  Card,
+  Button,
+  Navbar,
+  Nav,
+  NavDropdown,
+  Form,
+  FormControl, } from 'react-bootstrap'
 import {connect} from 'react-redux'
 
 import {setVisibilityFilter} from '../actions'
@@ -7,6 +15,7 @@ import {setVisibilityFilter} from '../actions'
 // import NewNoteModal from './NewNoteModal.js'
 import Note from './Note.js'
 import NavBar from './NavBar.js'
+import NewNoteModal from './NewNoteModal.js'
 
 function Organizer({state}) {
   const {notes, db} = state.crudDB
@@ -14,6 +23,7 @@ function Organizer({state}) {
   return(
     <Container>
       <NavBar/>
+      <NewNoteModal/>
       <Card
         style={{
           color:"white",
