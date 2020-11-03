@@ -14,8 +14,7 @@ let Note = (note) => {
    return(
      <Card
       style={{
-        padding:"2px",
-        margin:"0.25rem",
+        margin:"2px",
         float:"left",
         backgroundColor:"rgba(255,255,255,0)",
         border:"none"}}>

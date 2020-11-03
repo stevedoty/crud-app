@@ -5,8 +5,13 @@ import landscape from '../assets/landscape.jpg'
 
 let NavBar = () => {
    return(
-     <Navbar bg="light" expand="lg" style={{marginBottom:"6px"}}>
-       <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+     <Navbar
+       bg="light"
+       expand="lg"
+       style={{
+         marginBottom:"6px", 
+         borderRadius:"0 0 5px 5px"}}>
+       <Navbar.Brand href="#home">MyNotes</Navbar.Brand>
        <Navbar.Toggle aria-controls="basic-navbar-nav" />
        <Navbar.Collapse id="basic-navbar-nav">
          <Nav className="mr-auto">

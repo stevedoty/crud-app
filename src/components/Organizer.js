@@ -21,13 +21,14 @@ function Organizer({state}) {
   const {notes, db} = state.crudDB
 
   return(
-    <Container>
+    <div style={{width:"100%"}}>
       <NavBar/>
       <NewNoteModal/>
       <Card
         style={{
           color:"white",
-          backgroundColor:"rgba(255,255,255,0.38)"
+          backgroundColor:"rgba(255,255,255,0.38)",
+          margin: "2px 6px"
         }}>
         {db[0].noteTitle}
         {db[0].notes.map((note, {children}, i)=>{
@@ -35,7 +36,7 @@ function Organizer({state}) {
           return <Note key={i} {...note}/>
         })}
       </Card>
-    </Container>
+    </div>
   )
 
 }

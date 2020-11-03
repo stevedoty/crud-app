@@ -14,15 +14,29 @@ function NewNoteModal() {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
-        Launch demo modal
+      <Button
+        variant="primary"
+        onClick={handleShow}
+        style={{marginBottom:"5px"}}>
+        AddNote
       </Button>
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Modal heading</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+        <Modal.Body>
+        <Form>
+          <Form.Row>
+            <Col>
+              <Form.Control placeholder="Title" />
+            </Col>
+            <Col>
+              <Form.Control placeholder="Detail" />
+            </Col>
+          </Form.Row>
+        </Form>
+        </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close
